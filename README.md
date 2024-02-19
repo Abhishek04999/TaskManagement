@@ -1,3 +1,18 @@
+<h1>Command to run code</h1></hr>
+
+git clone https://github.com/Abhishek04999/TaskManagement.git
+
+cd TaskManagement
+
+composer install
+
+php artisan key:generate
+
+php artisan migrate
+
+code .
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
