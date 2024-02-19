@@ -1,13 +1,13 @@
-Command to run code
-git clone https://github.com/Sourabhtripathi1/Electronic-Shop-Laravel.git
+<h1>Command to run code</h1></hr>
 
-cd Electronic-Shop-Laravel
+git clone https://github.com/Abhishek04999/TaskManagement.git
+
+cd TaskManagement
 
 composer install
 
 php artisan key:generate
 
-php artisan Storage:link
 
 code .
 
