@@ -15,6 +15,10 @@ Route::post('/', [TaskController::class, 'signup']);
 Route::post('/login', [TaskController::class, 'login']);
 Route::post('/logout', [TaskController::class, 'logout'])->name('logout');
 
+Route::get('auth/google', [TaskController::class, 'loginWithGoogle'])->name('google.login');
+Route::get('auth/google/callback', [TaskController::class, 'callbackFromGoogle'])->name('google.callback');
+
+
 
 Route::group(['middleware' => 'auth.user'], function () {
     Route::get('/task_view', [TaskController::class, 'task_view'])->name('tasks.index');

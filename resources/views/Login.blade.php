@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+            background-color: #f7f7f7;
         }
 
         .container {
@@ -22,7 +22,7 @@
             background-color: #f5f5f5;
             margin: 0;
             padding: 0;
-            background: #8b8bff
+            background: #f7f7f7;
         }
 
         /* Form styles */
@@ -50,7 +50,7 @@
 
         /* Button styles */
         button {
-            background-color: #007bff;
+            background-color: #2383eb;
             color: #fff;
             border: none;
             padding: 10px 20px;
@@ -60,6 +60,15 @@
             width: calc(100% - 20px);
             box-sizing: border-box;
             transition: background-color 0.3s;
+            font-size: 18px;
+        }
+
+        .btn{
+            background-color: rgb(214, 124, 102);
+            font-size: 18px;
+        }
+        .btn:hover{
+            background-color: rgb(181, 43, 8)
         }
 
         button:hover {
@@ -88,8 +97,13 @@
                 <input type="text" name="name" placeholder="Name" required>
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="password" name="password" placeholder="Password" required>
-                <button>Sign Up</button>
+                <button>Sign Up</button><hr>
+
             </form>
+            <a href="{{ route('google.login') }}"><button class="btn" >Continue with google</button></a>
+            <div style="margin-top: 10px;">
+                <span>or<span>
+            </div>
             <button id="loginBtn">Login</button>
         </div>
 
@@ -100,8 +114,13 @@
                 @csrf
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="password" name="password" placeholder="Password" required>
-                <button>Login</button>
+                <button>Login</button><hr>
             </form>
+            <a href="{{ route('google.login') }}"><button class="btn" >Continue with google</button></a>
+
+            <div style="margin-top: 10px;">
+                <span>or<span>
+            </div>
             <button id="signupBtn">Sign Up</button>
         </div>
     </div>

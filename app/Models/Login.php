@@ -10,5 +10,5 @@ class Login extends Model
     use HasFactory;
     protected $table = 'login';
     protected $primaryKey = "id";
-    protected $fillable = ['name', 'email', 'password'];
+    protected $fillable = ['name', 'email', 'password', 'google_id'];
 }
